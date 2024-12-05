@@ -2,13 +2,25 @@
 Clone the repository to home folder
 
 <ol>
-    <li>nano ~/.bashrc</li>
-    <li>
+    <li>Clone or download the repository to home folder </li>
+    <li>Run this in terminal
+        ```
+            nano ~/.bashrc
+        ```
+    </li>
+    <li> Add this to the bashrc file
+        ```
         if [ -f ~/custom-aliases ]; then
             . ~/custom-aliases
         fi
+        ```
     </li>
-    <li>source ~/.bashrc</li>
+    <li> Apply changes immediately. Run this from terminal
+        ```
+        source ~/.bashrc
+        ```
+    </li>
+</ol>
 
 
 
