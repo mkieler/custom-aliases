@@ -11,7 +11,7 @@ nano ~/.bashrc
 Add this to the bashrc file
 ```
 if [ -f ~/custom-aliases ]; then
-    . ~/custom-aliases
+    . ~/custom-aliases/aliases
 fi
 ```
 
