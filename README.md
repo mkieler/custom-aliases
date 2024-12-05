@@ -1,9 +1,19 @@
-# custom-aliases
+## INSTALLATION GUIDE LINUX
+Clone the repository to home folder
 
-nano ~/.bashrc
+<ol>
+    <li>nano ~/.bashrc</li>
+    <li>
+        if [ -f ~/custom-aliases ]; then
+            . ~/custom-aliases
+        fi
+    </li>
+    <li>source ~/.bashrc</li>
 
-if [ -f ~/custom-aliases ]; then
-    . ~/custom-aliases
-fi
 
-source ~/.bashrc
+
+
+
+
+
+
