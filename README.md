@@ -10,7 +10,7 @@ nano ~/.bashrc
 
 Add this to the bashrc file
 ```
-if [ -f ~/custom-aliases ]; then
+if [ -f ~/custom-aliases/aliases ]; then
     . ~/custom-aliases/aliases
 fi
 ```
