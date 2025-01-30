@@ -7,3 +7,18 @@ alias dupb='docker compose up -d --build'
 alias ddown='docker compose down'
 alias dx='docker compose exec'
 alias dxapp='docker compose exec app bash'
+
+# GoLearn specific
+alias glstart='herd start && brew services start --all'
+alias glstop='herd stop && brew services stop --all'
+
+# Eduhouse specific
+alias ehstart='open -a Docker && cd ~/dev/Eduhouse/dev-vm/ && ./environment.sh start'
+alias ehstop='cd ~/dev/Eduhouse/dev-vm/ && ./environment.sh stop'
+export DOCKER_ENV=dev
+
+
+#Close docker
+function dockerkill() {
+    ps ax|grep -i docker|egrep -iv 'grep|com.docker.vmnetd'|awk '{print $1}'|xargs kill
+}
